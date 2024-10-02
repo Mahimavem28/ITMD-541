@@ -89,6 +89,6 @@
 
 #transition-section .box a:hover {
     background-color: #96cc00;
-    color: #fff;
+    color: hsla(20, 93%, 45%, 0.927);
     transition-duration: 0.5s;
 }
