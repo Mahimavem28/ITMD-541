@@ -40,37 +40,20 @@
 
 /* Flexbox Part 3 */
 
-/* Flexbox Part 3 */
-
-    
-
 #flex-section3 .box {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
+}
 
-    
-
-    }
-
-    
-
-    #flex-section3 .tags ul {
-
+#flex-section3 .tags ul {
     display: flex;
-
     flex-wrap: wrap;
-
     list-style: none;
-
     padding: 0;
+}
 
-    }
-
-    /* end Flexbox Part 3 */
+/* end Flexbox Part 3 */
 
 /* Grid Part 1 */
 
