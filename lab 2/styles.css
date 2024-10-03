@@ -2,7 +2,7 @@
 
 #flex-section1 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space space-evenly;
     padding: 0;
     list-style: none;
 }
@@ -13,7 +13,7 @@
 
 #flex-section2 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
 }
 
@@ -41,13 +41,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
 }
 
 #flex-section3 .tags ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     list-style: none;
     padding: 0;
 }
