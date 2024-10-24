@@ -48,8 +48,8 @@ input[type="range"] {
 
 /* Disabled Field Styling */
 input[disabled] {
-    background-color: #f0f0f0;
-    color: #666;
+    background-color: #5d1465;
+    color: #265875;
     font-weight: bold;
     cursor: not-allowed;
 }
