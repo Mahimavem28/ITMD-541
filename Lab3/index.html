@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip Calculator</title>
+    <title>Tip Calculator with Currency Conversion</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
 </head>
@@ -18,10 +18,18 @@
             <input type="range" id="tipRange" min="0" max="100" value="15">
             <input type="text" id="tipPercentage" value="15%" disabled>
 
-            <label for="tipAmount">Tip Amount ($):</label>
+            <label for="currency">Select Currency:</label>
+            <select id="currency">
+                <option value="USD" selected>USD ($)</option>
+                <option value="JPY">Yen (¥)</option>
+            </select>
+
+            <p id="conversionRate" class="conversion">1 USD = 149.34 JPY</p>
+
+            <label for="tipAmount">Tip Amount:</label>
             <input type="text" id="tipAmount" disabled>
 
-            <label for="totalWithTip">Total Bill with Tip ($):</label>
+            <label for="totalWithTip">Total Bill with Tip:</label>
             <input type="text" id="totalWithTip" disabled>
 
             <p id="errorMessage" class="error"></p>
