@@ -49,7 +49,7 @@ input[type="range"] {
 /* Disabled Field Styling */
 input[disabled] {
     background-color: violet;
-    color: blue;
+    color: rgb(255, 0, 136);
     font-weight: bold;
     cursor: not-allowed;
 }
