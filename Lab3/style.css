@@ -59,8 +59,10 @@ select {
 /* Disabled Field Styling */
 input[disabled] {
     background-color: #e6e6e6;
-    color: #555;
+    color: #666;
     font-weight: bold;
+    font-style: italic;
+    border: 1px solid #ccc;
     cursor: not-allowed;
 }
 
