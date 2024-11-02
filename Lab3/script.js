@@ -11,7 +11,7 @@ const errorMessage = document.getElementById('errorMessage');
 // Conversion rates
 const conversionRates = {
     USD: 1,       // 1 USD = 1 USD
-    JPY: 149.34   // 1 USD = 149.34 Yen
+    JPY: 149.34   // 1 USD = 149.4 Yen
 };
 
 // Event listeners for input changes
