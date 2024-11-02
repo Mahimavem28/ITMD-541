@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator with Currency Conversion</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <div class="container">
+        <header>
+            <p>ITMD 541 - Lab 3 - Mahima Vemuri</p>
+        </header>
         <h1>Tip Calculator</h1>
         <form id="tipForm">
             <label for="billAmount">Bill Total ($):</label>
@@ -23,7 +25,6 @@
                 <option value="USD" selected>USD ($)</option>
                 <option value="JPY">Yen (¥)</option>
             </select>
-
             <p id="conversionRate" class="conversion">1 USD = 149.34 JPY</p>
 
             <label for="tipAmount">Tip Amount:</label>
