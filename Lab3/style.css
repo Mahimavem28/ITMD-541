@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Monotype Corsiva', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Container Styling */
@@ -12,8 +12,17 @@
     margin: 50px auto;
     padding: 20px;
     border-radius: 12px;
-    background-color: gray;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4a90e2;
+}
+
+/* Header Styling */
+header p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Title Styling */
@@ -21,7 +30,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
-    color: rgb(255, 106, 0);
+    color: #333;
 }
 
 /* Form Layout */
@@ -34,22 +43,23 @@ form {
 /* Labels and Inputs Styling */
 label {
     font-size: 14px;
-    color: rgb(47, 50, 255);
-    margin-bottom: 5px;
+    color: #555;
 }
 
 input[type="text"],
-input[type="range"] {
+input[type="range"],
+select {
     padding: 12px;
-    border: 1px solid white;
+    border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
+    outline: none;
 }
 
 /* Disabled Field Styling */
 input[disabled] {
-    background-color: rgb(130, 202, 238);
-    color: rgb(255, 0, 136);
+    background-color: #e6e6e6;
+    color: #555;
     font-weight: bold;
     cursor: not-allowed;
 }
@@ -62,7 +72,14 @@ input[disabled] {
     margin-top: 5px;
 }
 
-/* Adjustments for Mobile Screens */
+/* Conversion Rate Info */
+.conversion {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+}
+
+/* Responsive Design */
 @media (max-width: 500px) {
     .container {
         width: 90%;
@@ -71,7 +88,8 @@ input[disabled] {
     }
 
     input[type="text"],
-    input[type="range"] {
+    input[type="range"],
+    select {
         font-size: 14px;
         padding: 10px;
     }
