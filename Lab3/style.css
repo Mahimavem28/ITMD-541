@@ -20,7 +20,7 @@
 /* Header Styling */
 header p {
     text-align: center;
-    font-style: bold;
+    font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
