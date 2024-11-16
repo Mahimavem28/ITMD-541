@@ -15,32 +15,32 @@
         heroSection.style.backgroundImage = "url('https://picsum.photos/id/683/1280/720')";
     }
 
-    // Match navbar background color to footer color
+    // 4. Match navbar background color to footer color
     const navBar = document.querySelector('header');
     const pageFooter = document.querySelector('footer');
     if (navBar && pageFooter) {
         navBar.style.backgroundColor = window.getComputedStyle(pageFooter).backgroundColor;
     }
 
-    // Remove the "Get Started" button from the hero section
+    // 5. Remove the "Get Started" button from the hero section
     const heroCTA = document.querySelector('#hero a');
     if (heroCTA) {
         heroCTA.remove();
     }
 
-    // Update icon colors in the Services section to #6495ed
+    // 6. Update icon colors in the Services section to #6495ed
     const serviceIcons = document.querySelectorAll('#services .material-symbols-outlined');
     serviceIcons.forEach(serviceIcon => {
         serviceIcon.style.color = "#6495ed";
     });
 
-    // Replace the "Digital Marketing" icon with 'Ads Click'
+    // 7. Replace the "Digital Marketing" icon with 'Ads Click'
     const adsClickIcon = document.querySelector('#services .material-symbols-outlined[data-icon="digital"]');
     if (adsClickIcon) {
         adsClickIcon.textContent = "ads_click";
     }
 
-    // Adjust layout for specialized marketing solutions at >= 1024px to 4 columns
+    // 8. Adjust layout for specialized marketing solutions at >= 1024px to 4 columns
     const styleTag = document.createElement("style");
     styleTag.textContent = `
         @media (min-width: 1024px) {
@@ -57,7 +57,7 @@
         musicianImg.src = "https://picsum.photos/id/453/400/300";
     }
 
-    // Prevent the form submission to the broken URL and validate input
+    // 9. Prevent the form submission to the broken URL and validate input
     const contactFormElement = document.querySelector('#contact form');
     if (contactFormElement) {
         contactFormElement.addEventListener('submit', function(event) {
