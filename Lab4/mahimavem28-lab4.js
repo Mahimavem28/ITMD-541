@@ -6,7 +6,7 @@
     // 2. Change the subheadline text below the hero headline
     const subHeadline = document.querySelector('#hero p');
     if (subHeadline) {
-        subHeadline.innerHTML = "<b><i>Leverage innovative strategies from Stellar Marketing to make your business shine and succeed.</i></b>";
+        subHeadline.innerHTML = "Leverage innovative strategies from Stellar Marketing to make your business <strong><em>shine</em></strong> and <strong><em>succeed</em></strong>.";
     }
 
     // 3. Change the imagein the background of the hero section
