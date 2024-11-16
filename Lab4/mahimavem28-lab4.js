@@ -9,7 +9,7 @@
         subHeadline.innerHTML = "<b><i>Leverage innovative strategies from Stellar Marketing to make your business shine and succeed.</i></b>";
     }
 
-    // 3. Change the background image of the hero section
+    // 3. Change the imagein the background of the hero section
     const heroSection = document.querySelector('#hero');
     if (heroSection) {
         heroSection.style.backgroundImage = "url('https://picsum.photos/id/683/1280/720')";
@@ -19,17 +19,17 @@
     const navBar = document.querySelector('header');
     const pageFooter = document.querySelector('footer');
     if (navBar && pageFooter) {
-        navBar.style.backgroundColor = window.getComputedStyle(pageFooter).backgroundColor;
+        const footerBgColor = window.getComputedStyle(pageFooter).backgroundColor;
+        navBar.style.backgroundColor = footerBgColor;
     }
 
-    // 5. Remove the "Get Started" button from the hero section
+    // 5. Remove the "Get Started"  Call-to-action (CTA) button from the hero section
     const heroCTA = document.querySelector('#hero a');
     if (heroCTA) {
         heroCTA.remove();
     }
 
-    // 6. Update icon colors in the Services section to #6495ed
-    const serviceIcons = document.querySelectorAll('#services .material-symbols-outlined');
+    // 6. Update icon colors in the Services section to light blue (#6495ed)    const serviceIcons = document.querySelectorAll('#services .material-symbols-outlined');
     serviceIcons.forEach(serviceIcon => {
         serviceIcon.style.color = "#6495ed";
     });
@@ -51,13 +51,13 @@
     `;
     document.head.appendChild(styleTag);
 
-    // Update the Musicians image in the specialized marketing solutions section
+    // 9. Update the Musicians image in the specialized marketing solutions section
     const musicianImg = document.querySelector('#solutions img[alt="Musicians"]');
     if (musicianImg) {
         musicianImg.src = "https://picsum.photos/id/453/400/300";
     }
 
-    // 9. Prevent the form submission to the broken URL and validate input
+    // Prevent the form submission to the broken URL and validate input
     const contactFormElement = document.querySelector('#contact form');
     if (contactFormElement) {
         contactFormElement.addEventListener('submit', function(event) {
