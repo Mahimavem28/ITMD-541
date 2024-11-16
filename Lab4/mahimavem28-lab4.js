@@ -29,7 +29,8 @@
         heroCTA.remove();
     }
 
-    // 6. Update icon colors in the Services section to light blue (#6495ed)    const serviceIcons = document.querySelectorAll('#services .material-symbols-outlined');
+    // 6. Update icon colors in the Services section to light blue (#6495ed)    
+    const serviceIcons = document.querySelectorAll('#services .material-symbols-outlined');
     serviceIcons.forEach(serviceIcon => {
         serviceIcon.style.color = "#6495ed";
     });
